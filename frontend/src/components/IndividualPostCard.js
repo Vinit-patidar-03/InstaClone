@@ -24,7 +24,7 @@ const IndividualPostCard = (props) => {
     }
   return (
     <>
-        <div className='cursor-pointer mt-10 ml-8 shadow-lg'>
+        <div className='cursor-pointer mt-10 p-5 shadow-lg'>
              <div className='relative h-[300px] transition-all hover:scale-110'>
                     <img src={post.photo} className='h-full rounded-xl shadow-lg' alt="logo" />
                     <i className="fa-solid fa-trash absolute right-3 top-3 cursor-pointer text-red-600" onClick={deletePost}></i>

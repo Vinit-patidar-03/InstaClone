@@ -70,7 +70,7 @@ const PostCard = () => {
                 loading ?
                     <img src="/images/spinner.gif" alt="loader" />
                     :
-                    <div className=' p-2 w-[90%] h-[80%] m-auto bg-white rounded-2xl createdPostCard flex flex-col justify-evenly'>
+                    <div className=' p-2 w-[90%] h-[90%] m-auto bg-white rounded-2xl createdPostCard flex flex-col justify-evenly'>
                         <h1 className='p-2 text-center font-bold text-xl'>Create Post and Share Your Best Time</h1>
                         <hr />
                         <div className='m-2 flex items-center'>
@@ -78,7 +78,7 @@ const PostCard = () => {
                             <h5 className='ml-2 font-bold'>{user.name}</h5>
                         </div>
                         <div className='py-3 h-[70%]'>
-                            {preview ? <img src={preview} alt="preview" className='h-full m-auto' id='preview' /> : <img src='/images/default_images.png' className='h-[300px] m-auto' alt="preview" id='preview' />}
+                            {preview ? <img src={preview} alt="preview" className='h-full m-auto' id='preview' /> : <img src='/images/default_images.png' className='h-full m-auto' alt="preview" id='preview' />}
                         </div>
                         <div className='p-2'>
                             <input type="file" name="file" id="file" className='my-2 text-xs' onChange={selectFile} />
