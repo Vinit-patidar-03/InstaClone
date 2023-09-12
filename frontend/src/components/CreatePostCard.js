@@ -70,15 +70,15 @@ const PostCard = () => {
                 loading ?
                     <img src="/images/spinner.gif" alt="loader" />
                     :
-                    <div className=' p-2 w-[90%] h-[90%] m-auto bg-white rounded-2xl createdPostCard flex flex-col justify-evenly'>
+                    <div className=' p-2 w-[90%] m-auto bg-white rounded-2xl createdPostCard flex flex-col justify-evenly'>
                         <h1 className='p-2 text-center font-bold text-xl'>Create Post and Share Your Best Time</h1>
                         <hr />
                         <div className='m-2 flex items-center'>
                             <img src="https://cdn-icons-png.flaticon.com/128/3135/3135715.png" className='w-8' alt="logo" />
                             <h5 className='ml-2 font-bold'>{user.name}</h5>
                         </div>
-                        <div className='py-3 h-[70%]'>
-                            {preview ? <img src={preview} alt="preview" className='h-full m-auto' id='preview' /> : <img src='/images/default_images.png' className='h-full m-auto' alt="preview" id='preview' />}
+                        <div className='py-3'>
+                            {preview ? <img src={preview} alt="preview" className='w-[50%] m-auto' id='preview' /> : <img src='/images/default_images.png' className='w-[50%] m-auto' alt="preview" id='preview' />}
                         </div>
                         <div className='p-2'>
                             <input type="file" name="file" id="file" className='my-2 text-xs' onChange={selectFile} />
